@@ -44,14 +44,7 @@ myApp.controller('mainController', ['$scope', '$log', function($scope, $log) {
         city: 'Miami',
         state: 'FL',
         zip: '33333'
-        },
-        {
-        name: 'Juanga Pena',
-        address: '111 Third St.',
-        city: 'Miami',
-        state: 'FL',
-        zip: '33333'
-        }        
+        }      
     ]
     
     $scope.formattedAddress = function(person) {
@@ -59,12 +52,6 @@ myApp.controller('mainController', ['$scope', '$log', function($scope, $log) {
         return person.address + ', ' + person.city + ', ' + person.state + ' ' + person.zip;
         
     };
-    
-}]);
-
-myApp.controller('secondController', ['$scope', '$log', '$routeParams', function($scope, $log, $routeParams) {
-    
-    
     
 }]);
 
